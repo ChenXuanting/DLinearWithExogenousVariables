@@ -2,5 +2,7 @@ In a recent paper titled "[Are Transformers Effective for Time Series Forecastin
 
 However, one limitation of the original DLinear model is that it does not account for exogenous variables. In response to this, I propose a modification that enables the network to accept exogenous variables as inputs and integrate them into the model's weights. Specifically, a final linear layer is added to the network to facilitate the inclusion of these exogenous variables.
 
+The original repo: https://github.com/cure-lab/LTSF-Linear
+
 ### DLinear
 ![image](pics/DLinear.png)
