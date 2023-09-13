@@ -68,10 +68,10 @@ class Model_exog(nn.Module):
             # self.Linear_Seasonal.weight = nn.Parameter((1/self.seq_len)*torch.ones([self.pred_len,self.seq_len]))
             # self.Linear_Trend.weight = nn.Parameter((1/self.seq_len)*torch.ones([self.pred_len,self.seq_len]))
   
-        # the linear layers that fits the final seasonality
+        # the linear layer that fits the final seasonality
         self.Linear_Seasonal_final = nn.Linear(self.channel_x+self.channel_exog, self.channel_x)
         
-        # the linear layers that fits the final trend
+        # the linear layer that fits the final trend
         self.Linear_Trend_final = nn.Linear(self.channel_x+self.channel_exog, self.channel_x)
         
     def forward(self, x, exog):
